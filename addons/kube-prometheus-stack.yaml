@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: git@github.com:AtitX/helmaddons.git
-    path: add-ons/kube-prometheus-stack
+    path: addons
     targetRevision: 48.1.2
     helm:
       skipCrds: true
