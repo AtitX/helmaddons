@@ -12,7 +12,7 @@ spec:
     path: addons
     targetRevision: 48.1.2
     helm:
-      skipCrds: true
+      skipCrds: false
       values: |
         kube-prometheus-stack:
           prometheus:
@@ -28,6 +28,7 @@ spec:
       selfHeal: true
     syncOptions:
     - CreateNamespace=true
+    - ServerSideApply=true
     retry:
       limit: 1
       backoff:
