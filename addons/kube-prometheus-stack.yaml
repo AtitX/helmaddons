@@ -12,7 +12,7 @@ spec:
     path: addons
     targetRevision: 48.1.2
     helm:
-      skipCrds: true
+      skipCrds: false
       values: |
         kube-prometheus-stack:
           prometheus:
